@@ -1,5 +1,276 @@
-p {
-    margin-top: 10px;
+.header {
+    background: url(../images/bg.png)repeat center center;
+    background-size: cover;
+    /* position: fixed; */
+    /* height: 500px; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.logo {
+    /* padding-right: 219px; */
+}
+
+.items {
+    margin-top: 30px;
+    list-style-type: none;
+    float: right;
+}
+
+.items ul li {
+    padding-left: 43px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    display: inline;
+    color: white;
+}
+
+.header-outer {
+    background-color: #ececec;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 0;
+}
+
+.about h2 {
+    margin-top: 34px;
+    color: #7f8887;
+    font-size: 18pt;
+    margin: auto;
+}
+
+.home-aboutus h2 {
+    font-size: 18pt;
+    margin-top: 34px;
+    float: right;
+    color: #7f8887;
+    margin: auto;
+}
+
+.body1 {
+    background-color: #f3f3f3;
+    height: 504px;
+    /* margin-top: 160px; */
+}
+
+.body1 h2 {
+    padding-top: 54px;
     color: red;
-    text-align: justify;
+}
+
+.body1 p {
+    color: #7f8887;
+    margin-top: 29px;
+}
+
+.col1 {
+    float: left;
+    margin-left: 20px;
+    width: 255px;
+    position: relative;
+}
+
+.col1 .smallpng {
+    width: 100%;
+}
+
+.col1 h2 {
+    /* why choose us? */
+    padding-bottom: 39px;
+    color: red;
+    /* display: none; */
+}
+
+.col1 ul li {
+    /* margin-top: 5px; */
+    color: #7f8887;
+    list-style-type: square;
+    /* display: none; */
+}
+
+.col2 {
+    float: left;
+    margin-left: 100px;
+}
+
+.col2 p {
+    width: 553px;
+    margin-top: 75px;
+    padding-bottom: 10px;
+    width: 553px;
+}
+
+.fixed {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fixed ul li {
+    list-style-type: none;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7f8887;
+    font-size: 12pt;
+    padding-right: 50px;
+}
+
+.col3 h2 {
+    color: red;
+}
+
+.col3 h2 p {
+    color: #7f8887;
+}
+
+.body2 {
+    background: url(../images/johndoe.png) repeat-x;
+    height: 1100px;
+}
+
+.body2 h2 {
+    color: #7f8887;
+    text-align: center;
+    padding: 72px;
+    font-size: 35pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.first {
+    width: 250px;
+    z-index: 2;
+    position: relative;
+}
+
+.buttom {
+    z-index: 10;
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.our-team.col2 {
+    float: left;
+    /* margin-left: 350px; */
+}
+
+
+/* .second {
+    height: 338px;
+    width: 274px;
+    z-index: 2;
+    position: relative;
+}
+
+.second.buttom {
+    margin-top: -88px;
+    z-index: 10;
+    position: absolute;
+} */
+
+.best-sol h2 {
+    margin-top: 250px;
+    text-align: center;
+    color: red;
+    font-size: 25pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.best-sol p {
+    text-align: center;
+    font-size: 18pt;
+    color: #7f8887;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sol {
+    margin-top: 70px;
+}
+
+.our-happy-clients p {
+    margin-left: 20px;
+    margin-top: 100px;
+    font-size: 14pt;
+    color: #7f8887;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.line {
+    margin-left: 180px;
+    float: left;
+    margin-top: -20px;
+}
+
+.redbottom {
+    float: right;
+    margin-top: -40px;
+}
+
+.redbottom:hover {
+    background: red;
+}
+
+.jquery {
+    margin-top: 50px;
+    float: left;
+    margin-left: 20px;
+}
+
+.footer {
+    background: url(../images/footer.png) repeat center center;
+    width: 100%;
+    height: 297px;
+    margin-top: 149px;
+    color: white;
+}
+
+.colf {
+    margin-top: 40px;
+    float: left;
+    width: 400px;
+    /* margin-left: 60px; */
+}
+
+.colf p {
+    padding: 15px;
+}
+
+.cols {
+    float: left;
+    width: 210px;
+    margin-left: 20px;
+}
+
+.cols h2 {
+    margin-top: 20px;
+    padding: 0;
+    font-size: 18pt;
+}
+
+.cols ul li {
+    padding-bottom: 15px;
+}
+
+.cols ul li p {
+    list-style-type: none;
+}
+
+.foot-logo {
+    margin-top: 10px;
+}
+
+.last {
+    background: #6bb4ad;
+    height: 60px;
+    width: 100%;
+}
+
+.text {
+    padding-top: 2px;
+    color: white;
+}
+
+.symbol {
+    float: right;
 }
