@@ -142,12 +142,46 @@
     position: relative;
 }
 
+.second {
+    width: 250px;
+    z-index: 2;
+    position: absolute;
+    display: none;
+    z-index: 20;
+}
+
+.col1:hover .second {
+    width: 250px;
+    z-index: 2;
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
 .buttom {
     z-index: 10;
     position: absolute;
     top: 97%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.buttom2 {
+    z-index: 10;
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.col1:hover .buttom2 {
+    z-index: 10;
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
 }
 
 .our-team.col2 {
@@ -211,10 +245,16 @@
     background: red;
 }
 
-.jquery {
-    margin-top: 50px;
+.jquery-img {
+    margin-top: 40px;
     float: left;
     margin-left: 20px;
+}
+
+.jquery-img ul li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 10px;
 }
 
 .footer {
@@ -223,6 +263,14 @@
     height: 297px;
     margin-top: 149px;
     color: white;
+}
+
+.f1 {
+    padding-top: 60px;
+}
+
+.footer .f1-3 {
+    float: left;
 }
 
 .colf {
@@ -273,4 +321,8 @@
 
 .symbol {
     float: right;
+}
+
+.f1-3 {
+    float: left;
 }
