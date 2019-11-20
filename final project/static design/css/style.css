@@ -1,0 +1,129 @@
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .header {
+        background: url(../images/background-img.png);
+        background-repeat: no-repeat;
+        background: cover;
+        width: 100%;
+    }
+    
+    .header::after {
+        content: " ";
+        clear: both;
+        display: block;
+        visibility: none;
+    }
+    
+    .header-top {
+        padding-top: 24px;
+    }
+    
+    .logo {
+        float: left;
+    }
+    
+    .logo:hover {
+        background: pink;
+    }
+    
+    .menu-list {
+        float: right;
+    }
+    
+    .menu-list ul li {
+        display: inline-block;
+        list-style-type: none;
+        color: white;
+    }
+    
+    .menu-list ul li a {
+        padding: 10px 20px;
+        text-decoration: solid;
+        color: white;
+        line-height: 60px;
+    }
+    
+    .menu-list ul li a:hover {
+        background-color: grey;
+        border: -1px transparent;
+    }
+    
+    .menu-list ul li .button {
+        border-inline-color: blue;
+    }
+    
+    .most-selective {
+        color: white;
+        padding-top: 80px;
+        text-align: center;
+    }
+    
+    .most-selective h2 {
+        font-size: 50px;
+        padding-bottom: 20px;
+    }
+    
+    .most-selective p {
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+    
+    .view-all {
+        block-size: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 80px;
+    }
+    
+    .most-selective.view-all :hover {
+        background-color: blue;
+    }
+    
+    .search-box {
+        position: absolute;
+        top: 55%;
+        left: 25%;
+        transform: transition(-15%, -15%);
+    }
+    
+    .search-text {
+        height: 80px;
+        width: 500px;
+    }
+    
+    .search-btn {
+        color: red;
+        float: left;
+        width: 120px;
+        height: 80px;
+        background: pink;
+        border: 1px;
+        border-color: black;
+        /* justify-content: center;
+        align-items: center; */
+        float: left;
+    }
+    
+    .filter-by ul li {
+        display: inline-block;
+        /* color: pink; */
+    }
+    
+    .filter-by ul li a {
+        color: black;
+        padding: 10px 20px;
+        border: 1px solid grey;
+        text-decoration: none;
+        background-color: grey;
+    }
+    
+    .filter-by ul li a:hover {
+        background-color: blue;
+        border: 1px transparent;
+    }
+    
+    .section {
+        padding-top: 70px;
+    }
