@@ -1,0 +1,88 @@
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 200px;
+    margin: 0px auto;
+}
+
+.carousel-image-wrapper {
+    /* display: inline; */
+    width: 3600px;
+    position: absolute;
+}
+
+.carousel-image-wrapper img {
+    display: inline-block;
+    float: left;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: royalblue;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 45%;
+}
+
+.next,
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    /* border-radius: 20px 10x 10px 20px; */
+    /* margin-left: 1138px; */
+    /* display: none; */
+}
+
+
+/* .prev {
+    /* border-radius: 0px 10px 10px 0px; */
+
+
+/* margin-right: 1120px; */
+
+.next {
+    left: 560px;
+    border-radius: 3px 0 0 3px;
+    /* display: none; */
+}
+
+
+/* .prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+} */
+
+.dots {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: none;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    /* display: none; */
+}
+
+.active,
+.dots:hover {
+    background-color: red;
+}
+
+.inactive {
+    background-color: none;
+}
