@@ -1,0 +1,13 @@
+.app {
+    height: 500px;
+    width: 500px;
+    background: pink;
+    position: relative;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+.box {
+    /* position: absolute; */
+    /* margin: 0 auto; */
+}
