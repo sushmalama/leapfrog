@@ -58,6 +58,8 @@ function Box(parentElement) {
     }
 
     this.move = function() {
+        this.element.style.background = 'url(../images/ant.png)';
+        this.element.style.backgroundSize = 'contain';
         this.x += this.dx;
         this.y += this.dy;
         this.draw();
@@ -122,7 +124,7 @@ function Game(parentElement, boxCount) {
             boxes.push(box);
             box.draw();
         }
-        setInterval(this.moveBoxes.bind(this), 100);
+        setInterval(this.moveBoxes.bind(this), 1000);
     }
 
     this.moveBoxes = function() {
