@@ -3,8 +3,8 @@ function Box(parentElement) {
     this.y = 15;
     this.dx = 2;
     this.dy = -10;
-    this.width = 50;
-    this.height = 50;
+    this.width = 30;
+    this.height = 30;
     this.element = null;
     this.parentElement = parentElement;
     var that = this;
@@ -112,7 +112,7 @@ function Game(parentElement, boxCount) {
                     getRandomArbitrary(0, MAX_HEIGHT - box.height)
                 )
                 // box.setSize(
-                //   getRandomArbitrary(10,50)
+                //   getRandomArbitrary(10,10)
                 // );
             if (box.checkPosition(boxes)) {
                 box.setPosition(
@@ -140,7 +140,7 @@ function Game(parentElement, boxCount) {
 
 var parentElement = document.getElementById('app');
 
-new Game(parentElement, 5).startGame();
+new Game(parentElement, 10).startGame();
 
 
 
@@ -151,8 +151,8 @@ function Box2(parentElement) {
     this.y = 15;
     this.dx = 2;
     this.dy = -10;
-    this.width = 50;
-    this.height = 50;
+    this.width = 15;
+    this.height = 15;
     this.element = null;
     this.parentElement = parentElement;
     var that = this;
@@ -246,7 +246,7 @@ function Game2(parentElement, boxCount) {
     var boxes = [];
     var MAX_WIDTH = 400;
     var MAX_HEIGHT = 400;
-    var colors = ['red', 'blue', 'green', 'yellow', 'black'];
+    var colors = ['red', 'blue', 'green', 'yellow', 'black', 'red', 'blue', 'green', 'yellow', 'black'];
     this.parentElement = parentElement;
     this.boxCount = boxCount || 10;
 
@@ -258,7 +258,7 @@ function Game2(parentElement, boxCount) {
                     getRandomArbitrary(0, MAX_HEIGHT - box.height)
                 )
                 // box.setSize(
-                //   getRandomArbitrary(10,50)
+                //   getRandomArbitrary(10,10)
                 // );
             if (box.checkPosition(boxes)) {
                 box.setPosition(
@@ -285,4 +285,4 @@ function Game2(parentElement, boxCount) {
 }
 var parentElement2 = document.getElementById('app2');
 
-new Game2(parentElement2, 5).startGame();
+new Game2(parentElement2, 10).startGame();
