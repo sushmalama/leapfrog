@@ -7,3 +7,8 @@
     margin: 0 auto;
     margin-bottom: 50px;
 }
+
+h1 {
+    text-align: center;
+    color: rgb(153, 45, 60)
+}
