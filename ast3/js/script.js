@@ -76,7 +76,7 @@ function Box(parentElement) {
 
     this.checkCollisionWithWall = function(maxWidth, maxHeight) {
         if (((this.x + this.dx) > (maxWidth - this.width)) || (this.x + this.dx < 0)) {
-            this.dx = -this.dx;
+            // this.dx = -this.dx;
         }
         if (((this.y + this.dy) > (maxHeight - this.height)) || (this.y + this.dy < 0)) {
             this.dy = -this.dy;
