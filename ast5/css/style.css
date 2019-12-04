@@ -1,0 +1,10 @@
+canvas {
+    margin: 0 auto;
+    border: 1px solid black;
+    display: block;
+    font-family: 'Teko', sans-serif;
+}
+
+body {
+    font-family: 'Teko', sans-serif;
+}
