@@ -8,7 +8,7 @@ const DEGREE = Math.PI / 180;
 
 //LOAD SPRITE IMAGE
 const sprite = new Image();
-sprite.src = "../images/sprite.png";
+sprite.src = "/images/sprite.png";
 
 //STATE
 const state = {
