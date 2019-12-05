@@ -1,77 +1,65 @@
- //BIRD
- const bird = {
-     animation: [
-         { sX: 276, sY: 112 },
-         { sX: 276, sY: 139 },
-         { sX: 276, sY: 164 },
-         { sX: 276, sY: 139 }
-     ],
-     x: 50,
-     y: 150,
-     w: 34,
-     h: 26,
-     radius: 12,
+function Bird(game) {
+    this.game = game;
 
-     frame: 0,
+    this.sX = 276;
+    this.sY = 112;
+    this.width = 35;
+    this.height = 25;
+    this.x = 50;
+    this.y = 150;
+    this.frame = 0;
+    this.image = document.getElementById('sprite');
 
-     gravity: 0.25,
-     jump: 4.6,
-     speed: 0,
-     rotation: 0,
+    this.speed = 0;
+    this.gravity = 0.25;
+    this.jump = 4;
+    var that = this;
 
-     draw: function() {
+    //Birds Animation
+    // this.animation = [
+    //     { sX: 276, sY: 112 }, //1st bird
+    //     { sX: 276, sY: 139 }, // 2nd bird
+    //     { sX: 276, sY: 164 }, //3rd bird
+    //     { sX: 276, sY: 139 } //2nd bird
+    // ];
+
+    this.draw = function(ctx) {
+        // var bird = this.animation[this.frame];
+        // this.frame = this.frame % this.animation.length;
 
 
-         let bird = this.animation[this.frame];
+        ctx.drawImage(this.image, this.sX, this.sY, this.width, this.height,
+            this.x - this.width / 2, this.y - this.height / 2, this.width, this.height);
 
-         ctx.save();
+        //     let bird = this.animation[this.frame];
 
-         ctx.translate(this.x, this.y);
+        // ctx.save();
 
-         ctx.rotate(this.rotation);
-         ctx.drawImage(sprite, bird.sX, bird.sY, this.w, this.h, -this.w / 2, -this.h / 2, this.w, this.h);
+        // ctx.translate(this.x, this.y);
 
-         ctx.restore();
-     },
-     flap: function() {
-         this.speed = -this.jump;
+        // ctx.rotate(this.rotation);
+        // ctx.drawImage(sprite, bird.sX, bird.sY, this.w, this.h, -this.w / 2, -this.h / 2, this.w, this.h);
 
-     },
-     update: function() {
-         //If the game state is get ready state, the bird must flap slowly
-         this.period = state.current == state.getReady ? 10 : 5;
+        // ctx.restore();
+    }
 
-         //we increment the frame by 1, each period
-         this.frame += frames % this.period == 0 ? 1 : 0;
+    this.update = function() {
+        this.speed += this.gravity;
+        this.y += this.speed;
 
-         //frame gets from 0 to 4, then again to 0
-         this.frame = this.frame % this.animation.length;
+        //collision with base ground
+        if (this.y + this.height / 2 >= 400) { // 400 = canvasHeight-baseGroundHeight
+            this.y = 400 - this.height / 2;
+        }
 
-         if (state.current == state.getReady) {
-             this.y = 150; //RESET position of the bird after game over
-             this.rotation = 0 * DEGREE;
-             // this.frame = 1;
+    }
 
-         } else {
-             this.speed += this.gravity;
-             this.y += this.speed;
+    this.flyHigh = function() {
+        this.speed = -this.jump;
+    }
 
-             if (this.y + this.h / 2 >= cvs.height - fg.h) {
-                 this.y = cvs.height - fg.h - this.h / 2;
-                 if (state.current == state.game) {
-                     state.current = state.over;
-                 }
-             }
-
-             //if the speed is greater than jump menas the bird is falling down
-             if (this.speed >= this.jump) {
-                 this.rotation = 90 * DEGREE;
-                 this.frame = 1;
-
-             } else {
-                 this.rotation = -25 * DEGREE;
-             }
-         }
-     }
-
- }
+    this.reset = function() {
+        this.y = 150;
+        this.speed = 0;
+    }
+}
